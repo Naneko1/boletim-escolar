@@ -1,0 +1,25 @@
+.cartao-resultado { min-height:100%; display:flex; flex-direction:column; align-items:center; text-align:center; border-top:7px solid var(--cor-situacao,var(--primaria)); }
+.resultado--aprovado { --cor-situacao:var(--aprovado); }
+.resultado--recuperacao { --cor-situacao:var(--recuperacao); }
+.resultado--reprovado { --cor-situacao:var(--reprovado); }
+.cartao-resultado--vazio { justify-content:center; border-top:1px dashed var(--borda); color:var(--texto-suave); }
+.resultado__icone { display:grid; place-items:center; width:58px; height:58px; border-radius:18px; background:var(--fundo); color:var(--primaria); font-size:1.8rem; }
+.cartao-resultado--vazio h2 { color:var(--texto); font:700 1.15rem 'Manrope',sans-serif; margin:17px 0 6px; }
+.cartao-resultado--vazio p { max-width:270px; margin:0; font-size:.85rem; line-height:1.6; }
+.resultado__legenda { display:flex; flex-wrap:wrap; justify-content:center; gap:7px; margin-top:25px; }
+.legenda { padding:6px 9px; border-radius:999px; font-size:.66rem; font-weight:700; }
+.legenda--verde { color:var(--aprovado); background:rgba(46,125,82,.1); }
+.legenda--laranja { color:var(--recuperacao); background:rgba(217,119,6,.1); }
+.legenda--vermelha { color:var(--reprovado); background:rgba(198,40,40,.1); }
+.resultado__topo { width:100%; display:flex; justify-content:space-between; color:var(--texto-suave); font-size:.64rem; font-weight:800; letter-spacing:.13em; }
+.resultado__ponto { color:var(--cor-situacao); }
+.resultado__nome { margin:25px 0 4px; font-size:1.08rem; font-weight:700; }
+.resultado__media { color:var(--cor-situacao); font:800 clamp(3.5rem,7vw,5rem) 'Manrope',sans-serif; letter-spacing:-.06em; line-height:1.1; }
+.resultado__situacao { margin-top:9px; padding:7px 15px; border-radius:999px; background:var(--cor-situacao); color:#fff; font-size:.75rem; font-weight:800; text-transform:uppercase; letter-spacing:.06em; }
+.resultado__mensagem { margin:16px 0 22px; color:var(--texto-suave); font-size:.85rem; }
+.resultado__frequencia { width:100%; display:flex; justify-content:space-between; padding:12px 0; border-top:1px solid var(--borda); color:var(--texto-suave); font-size:.82rem; }
+.resultado__frequencia strong { color:var(--texto); }
+.resultado__detalhes { margin-top:10px; padding:8px; border:0; background:transparent; color:var(--primaria); font-weight:700; cursor:pointer; }
+.resultado__lista { width:100%; list-style:none; padding:0; margin:4px 0 0; }
+.resultado__lista li { display:flex; justify-content:space-between; padding:9px 2px; border-top:1px solid var(--borda); color:var(--texto-suave); font-size:.82rem; }
+.resultado__lista strong { color:var(--texto); }
