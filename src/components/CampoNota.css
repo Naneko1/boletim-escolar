@@ -1,0 +1,4 @@
+.campo-nota { display:flex; flex-direction:column; gap:7px; min-width:0; }
+.campo-nota label { font-size:.82rem; font-weight:700; color:var(--texto); }
+.campo-nota input { width:100%; min-width:0; padding:12px; border:1px solid var(--borda); border-radius:10px; background:var(--fundo); color:var(--texto); }
+.campo-nota input:focus { outline:none; border-color:var(--primaria); box-shadow:0 0 0 3px rgba(61,90,128,.12); }
