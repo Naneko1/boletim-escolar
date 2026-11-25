@@ -1,0 +1,14 @@
+.formulario-notas,.cartao-resultado,.historico { background:var(--cartao); border:1px solid var(--borda); border-radius:var(--raio); padding:24px; }
+.formulario-notas { display:flex; flex-direction:column; gap:17px; }
+.formulario-notas__titulo { display:flex; align-items:center; gap:12px; margin-bottom:3px; }
+.formulario-notas__numero { display:grid; place-items:center; width:40px; height:40px; border-radius:12px; background:#e9eef5; color:#3d5a80; font-weight:800; }
+.formulario-notas h2 { margin:0; font:700 1.15rem 'Manrope',sans-serif; }
+.formulario-notas__titulo p { margin:3px 0 0; color:var(--texto-suave); font-size:.82rem; }
+.notas-grid { display:grid; grid-template-columns:1fr 1fr; gap:13px; }
+.formulario-notas__erro { margin:0; padding:10px 12px; border-radius:8px; background:rgba(198,40,40,.12); color:var(--reprovado); font-size:.85rem; }
+.formulario-notas__botoes { display:flex; gap:10px; }
+.botao { padding:12px 14px; border:1px solid var(--borda); border-radius:9px; background:transparent; color:var(--texto); font-weight:700; cursor:pointer; }
+.botao--principal { flex:1; display:flex; justify-content:space-between; align-items:center; border-color:var(--primaria); background:var(--primaria); color:white; }
+.botao:hover { filter:brightness(1.08); }
+.formulario-notas__ajuda { margin:0; color:var(--texto-suave); font-size:.72rem; line-height:1.5; }
+@media(max-width:420px){.formulario-notas{padding:17px}.notas-grid{gap:9px}}
